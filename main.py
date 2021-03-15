@@ -35,10 +35,10 @@ for ticket in range(1, number_of_tickets + 1):
                 sum_of_order += price_from_25
                 break
         except ValueError as e:
-            print("Введите возраст от 1 до 100")
+            print("Введите возраст цифрами")
 
 if number_of_tickets > 3:
     sum_of_order = sum_of_order - sum_of_order*discount//100
-    print(f"Количество билетов: {number_of_tickets}.\nСкидка: {discount}%. Сумма к оплате: {sum_of_order}")
+    print(f"Количество билетов: {number_of_tickets}. Скидка: {discount}%. Сумма к оплате: {sum_of_order}")
 else:
     print(f"Количество билетов: {number_of_tickets}. Сумма к оплате: {sum_of_order}")
